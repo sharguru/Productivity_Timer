@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  background-color: #141414;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+.timer {
+  margin: auto;
+}
+ul {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  font-size: 2rem;
+}
+.pomodoro::after {
+  content: "Pomodoro";
+}
+.pomodoro:hover::after {
+  content: "25 work/5 rest";
+  font-size: 1.5rem;
+}
+li {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-top: 2rem;
+  font-weight: bold;
+}
+li:hover {
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+  background-color: rgb(42, 42, 42);
+  transition-duration: 1s;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.realTime {
+  position: relative;
+  top: 7rem;
+  font-size: 13em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.breakText div {
+  font-size: 3rem;
+  position: relative;
+  top: 5rem;
+  color: rgb(192, 192, 192);
+}
+
+@media screen and (max-width: 1100px) {
+  .realTime {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .realTime {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .realTime {
+    font-size: 4rem;
+  }
+  .link,
+  .pomodoro:hover::after {
+    font-size: 1rem;
+  }
+  .breakText div {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .realTime {
+    font-size: 2rem;
+  }
+  .breakText div {
+    font-size: 1rem;
+  }
+}
